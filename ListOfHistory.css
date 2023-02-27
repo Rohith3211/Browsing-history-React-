@@ -1,0 +1,28 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+}
+.logo-card {
+  margin-left: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.time-card {
+  display: flex;
+  justify-content: space-between;
+}
+.logo-img {
+  width: 25px;
+  height: 25px;
+}
+p {
+  padding-left: 15px;
+}
+.title {
+  font-weight: 500;
+}
