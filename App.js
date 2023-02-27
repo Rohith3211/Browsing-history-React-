@@ -103,11 +103,17 @@ class App extends Component {
     return (
       <div className="total-container">
         <div className="blue-search">
-          <img src="https://assets.ccbp.in/frontend/react-js/history-website-logo-img.png " />
+          <img
+            src="https://assets.ccbp.in/frontend/react-js/history-website-logo-img.png"
+            alt="app logo"
+          />
 
           <div className="img-input">
             <div className="img">
-              <img src="https://assets.ccbp.in/frontend/react-js/search-img.png" />
+              <img
+                src="https://assets.ccbp.in/frontend/react-js/search-img.png"
+                alt="search"
+              />
             </div>
             <input
               className="input-element"
@@ -118,7 +124,7 @@ class App extends Component {
           </div>
         </div>
         <div className="container">
-          <div className="min-card">
+          <ul className="min-card">
             {searchResult.map(each => (
               <ListItems
                 details={each}
@@ -126,7 +132,7 @@ class App extends Component {
                 removingItems={this.removingItems}
               />
             ))}
-          </div>
+          </ul>
 
           {searchResult.length === 0 ? (
             <p>There is no history to show</p>
